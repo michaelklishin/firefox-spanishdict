@@ -26,23 +26,7 @@
     "default_icon": "icons/small.png"
   },
 
-  // "content_scripts": [
-  //   {
-  //     "matches": ["<all_urls>"],
-  //     "js": ["spanishdict.js", "content.js"]
-  //   }
-  // ],
-
   "background": {
     "scripts": ["spanishdict.js", "background.js"]
-  },
-
-  "commands": {
-    "sd-lookup-on-spanishdict": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+U"
-      },
-      "description": "Looks selected text up on SpanishDict"
-    }
   }
 }

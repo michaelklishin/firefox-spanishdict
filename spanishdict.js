@@ -4,7 +4,6 @@ function translationURL (input) {
 
 function openTranslationPage (input) {
   let url = translationURL(input);
-  console.log(`spanishdict: will navigate to ${url}`);
 
   browser.tabs.create({
     "url": url
