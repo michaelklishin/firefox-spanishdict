@@ -7,7 +7,7 @@
 
   "developer": {
     "name": "Michael Klishin",
-    "url": "https://github.com/michaelklishin"
+    "url": "https://github.com/michaelklishin/firefox-spanishdict"
   },
 
   "permissions": [
@@ -26,8 +26,15 @@
     "default_icon": "icons/small.png"
   },
 
+  // "content_scripts": [
+  //   {
+  //     "matches": ["<all_urls>"],
+  //     "js": ["spanishdict.js", "content.js"]
+  //   }
+  // ],
+
   "background": {
-    "scripts": ["spanishdict.js"]
+    "scripts": ["spanishdict.js", "background.js"]
   },
 
   "commands": {
