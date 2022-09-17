@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Quick lookup on SpanishDict",
+  "version": "1.0.0",
+
+  "description": "Adds a right-click menu to translate selected text using SpanishDict",
+
+  "developer": {
+    "name": "Michael Klishin",
+    "url": "https://github.com/michaelklishin"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "menus",
+    "activeTab",
+    "tabs"
+  ],
+
+  "icons": {
+    "48": "icons/small.png",
+    "96": "icons/big.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/small.png"
+  },
+
+  "background": {
+    "scripts": ["spanishdict.js"]
+  },
+
+  "commands": {
+    "sd-lookup-on-spanishdict": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Looks selected text up on SpanishDict"
+    }
+  }
+}
